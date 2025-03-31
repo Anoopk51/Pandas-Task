@@ -1,0 +1,26 @@
+Ingest all files: 
+	1. read file
+	2. drop url column
+	3. rename camel case to snake case
+	4. add current timestamp column
+	5 create csv file for that df by creating raw folder
+	
+Transformed :
+	Race results : 
+	1. read circuits, races, drivers, results, constructors, file from raw folder
+	2. apply join to get race name, race year, circuits_location,race date, diriver name, driver number,driver's nationality
+	grid, drivers position, fastest_lap, race_time,points, team
+	
+	
+	
+	Drivers standing:
+	1.read result file from raw folder
+	2. apply group by function to get total points obtained by each driver in each year
+	3. column required after performing above step :
+		a. race year
+		b. driver name
+		c. driver nationality
+		d. total points
+
+keep race result and divers standing output files into transfomed folder.	
+	
